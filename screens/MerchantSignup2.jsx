@@ -11,7 +11,7 @@ import { Formik } from "formik";
 
 import {
    StyledContainer,
-   PageLogo,
+
    PageTitle,
    SubTitle,
    StyledInputLabel,
@@ -23,11 +23,7 @@ import {
    InnerContainer,
    ButtonText,
    MsgBox,
-   Line,
-   ExtraView,
-   ExtraText,
-   TextLink,
-   TextLinkContent,
+ 
    Colors,
 } from "../components/styles";
 

@@ -62,7 +62,7 @@ const MerchantSignupGetStarted = ({ navigation, route }) => {
                   fontFamily: "AthleticsRegular",
                }}
             >
-               Let's get started {ssn}
+               Let's get started 
             </Text>
             <Text
                style={{

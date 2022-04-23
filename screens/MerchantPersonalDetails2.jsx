@@ -223,7 +223,7 @@ const MerchantPersonalDetails = ({ navigation, route }) => {
                            },
                         }}
                         query={{
-                           key: "AIzaSyC3xFUCmxy2eEjYbrIB9-e1R2uMmTpgyPk",
+                           key: "AIzaSyBMF1byRguGpEy6bWq-d_GzZzfOT4MAwVk",
                            language: "en",
                         }}
                         nearbyPlacesAPI="GooglePlacesSearch"

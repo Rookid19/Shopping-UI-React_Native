@@ -48,8 +48,8 @@ import CreateItem from "./screens/CreateItem";
 import BarcodeScanner from "./screens/BarcodeScanner";
 import QrCode from "./screens/QrCode";
 import Products2 from "./screens/Products2";
-import { Provider } from "react-redux";
-import { store } from "./store";
+// import { Provider } from "react-redux";
+// import { store } from "./store";
 
 const Stack = createStackNavigator();
 const globalScreenOptions = {
@@ -64,7 +64,7 @@ const globalScreenOptions = {
 
 export default function App() {
    return (
-      <Provider store={store}>
+      // <Provider store={store}>
          <NavigationContainer>
             <Stack.Navigator
                screenOptions={globalScreenOptions}
@@ -214,7 +214,7 @@ export default function App() {
                <Stack.Screen name="Products2" component={Products2} />
             </Stack.Navigator>
          </NavigationContainer>
-      </Provider>
+
    );
 }
 

@@ -66,7 +66,7 @@ const MerchantFinal = ({ navigation, route }) => {
                   fontSize: 30,
                }}
             >
-               You're all set! {firstName}
+               You're all set! 
             </Text>
             <Text
                style={{

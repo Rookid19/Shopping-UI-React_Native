@@ -11,7 +11,6 @@ import { Formik } from "formik";
 
 import {
    StyledContainer,
-   PageLogo,
    PageTitle,
    SubTitle,
    StyledInputLabel,
@@ -20,14 +19,8 @@ import {
    StyledTextInput,
    LeftIcon,
    RightIcon,
-   InnerContainer,
    ButtonText,
    MsgBox,
-   Line,
-   ExtraView,
-   ExtraText,
-   TextLink,
-   TextLinkContent,
    Colors,
 } from "../components/styles";
 
@@ -39,7 +32,7 @@ const { darkLight, brand, primary } = Colors;
 import { Octicons, Fontisto, Ionicons } from "@expo/vector-icons";
 // import MerchantSignup from "./MerchantSignup";
 import { Fragment } from "react";
-import { CheckBox } from "react-native-elements/dist/checkbox/CheckBox";
+
 
 let loginValidationSchema = yup.object().shape({
    website: yup.string().required("website or shop name is required"),
@@ -55,7 +48,6 @@ let loginValidationSchema = yup.object().shape({
    //    industry: yup.string().required("Industry is required"),
 });
 const MerchantCustomerSupport2 = ({ navigation, route }) => {
- 
    const [dateOfBirth] = useState(route.params.dateOfBirth);
    const [firstName] = useState(route.params.firstName);
    const [lastName] = useState(route.params.lastName);
@@ -68,9 +60,6 @@ const MerchantCustomerSupport2 = ({ navigation, route }) => {
    const [ein] = useState(route.params.ein);
    const [organization] = useState(route.params.organization);
    const [representative] = useState(route.params.representative);
-
-
-
 
    useLayoutEffect(() => {
       navigation.setOptions({
@@ -125,7 +114,6 @@ const MerchantCustomerSupport2 = ({ navigation, route }) => {
                   ein,
                   representative,
                   business,
-
                });
             }}
             // onSubmit={auth.signInWithEmailAndPassword(email,password).catch((error) => alert(error.message));}
@@ -213,7 +201,6 @@ const MerchantCustomerSupport2 = ({ navigation, route }) => {
                               <Picker.Item label="red" value="red" />
                               <Picker.Item label="blue" value="blue" />
                               <Picker.Item label="yellow" value="yellow" />
-                              
                            </Picker>
                         </View>
                      </Fragment>
